@@ -1,0 +1,16 @@
+wordpressUsername: admin
+wordpressPassword: tuPassword123
+
+mariadb:
+  auth:
+    rootPassword: rootPassword123
+
+service:
+  type: NodePort
+  nodePorts:
+    http: 30009
+
+resources:
+  requests:
+    memory: 256Mi
+    cpu: 250m
