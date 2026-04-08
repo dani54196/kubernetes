@@ -1,0 +1,23 @@
+admin:
+  existingSecret: pihole-secret # if you have an existing secret with password, specify it here. Else, one will be created automatically
+  user: admin
+  password: your_password
+dns:
+  forwarders: |
+    8.8.4.4#53
+    1.1.1.1#53
+  cacheEnabled: true
+  verbose: false
+service:
+  http:
+    enabled: true
+    type: ClusterIP
+    port: 80
+    targetPort: 80
+  https:
+    enabled: true
+    type: NodePort
+    port: 443
+    targetPort: 443
+persistence:
+  size: 5Gi
