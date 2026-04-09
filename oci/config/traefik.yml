@@ -8,7 +8,7 @@ spec:
   valuesContent: |-
     additionalArguments:
       - "--certificatesresolvers.letsencrypt.acme.tlschallenge=true"
-      - "--certificatesresolvers.letsencrypt.acme.email=dani54196@gmail.com"
+      - "--certificatesresolvers.letsencrypt.acme.email=daniel@gmail.com"
       - "--certificatesresolvers.letsencrypt.acme.storage=/data/acme.json"
 
     ports:
